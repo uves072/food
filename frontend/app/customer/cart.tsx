@@ -34,7 +34,7 @@ export default function CartScreen() {
       />
       <View style={styles.itemInfo}>
         <Text style={styles.itemName}>{item.name}</Text>
-        <Text style={styles.itemPrice}>₹item.price.toFixed(2)</Text>
+        <Text style={styles.itemPrice}>₹{item.price.toFixed(2)}</Text>
         <View style={styles.quantityContainer}>
           <TouchableOpacity
             style={styles.quantityButton}
@@ -56,7 +56,7 @@ export default function CartScreen() {
         onPress={() => {
           Alert.alert(
             'Remove Item',
-            `Remove ₹{item.name} from cart?`,
+            `Remove ${item.name} from cart?`,
             [
               { text: 'Cancel', style: 'cancel' },
               { text: 'Remove', onPress: () => removeFromCart(item.menu_item_id), style: 'destructive' },
@@ -94,7 +94,7 @@ export default function CartScreen() {
           <View style={styles.footer}>
             <View style={styles.totalContainer}>
               <Text style={styles.totalLabel}>Total:</Text>
-              <Text style={styles.totalAmount}>₹getTotal().toFixed(2)</Text>
+              <Text style={styles.totalAmount}>₹{getTotal().toFixed(2)}</Text>
             </View>
             <TouchableOpacity
               style={styles.checkoutButton}
