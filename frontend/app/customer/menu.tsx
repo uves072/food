@@ -63,7 +63,7 @@ export default function MenuScreen() {
       quantity: 1,
       image: item.image,
     });
-    Alert.alert('Success', `${item.name} added to cart!`);
+    Alert.alert('Success', `₹{item.name} added to cart!`);
   };
 
   const filteredItems = selectedCategory === 'All'
@@ -83,7 +83,7 @@ export default function MenuScreen() {
           {item.description}
         </Text>
         <View style={styles.itemFooter}>
-          <Text style={styles.itemPrice}>${item.price.toFixed(2)}</Text>
+          <Text style={styles.itemPrice}>₹item.price.toFixed(2)</Text>
           <TouchableOpacity
             style={[styles.addButton, !item.available && styles.disabledButton]}
             onPress={() => handleAddToCart(item)}

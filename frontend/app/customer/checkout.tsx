@@ -79,14 +79,14 @@ export default function CheckoutScreen() {
                   {item.quantity}x {item.name}
                 </Text>
                 <Text style={styles.itemPrice}>
-                  ${(item.price * item.quantity).toFixed(2)}
+                  ₹(item.price * item.quantity).toFixed(2)
                 </Text>
               </View>
             ))}
             <View style={styles.divider} />
             <View style={styles.totalRow}>
               <Text style={styles.totalLabel}>Total</Text>
-              <Text style={styles.totalAmount}>${getTotal().toFixed(2)}</Text>
+              <Text style={styles.totalAmount}>₹getTotal().toFixed(2)</Text>
             </View>
           </View>
 

@@ -64,7 +64,7 @@ export default function AdminDashboardScreen() {
 
     socket.on('new_order', (newOrder: Order) => {
       setOrders((prev) => [newOrder, ...prev]);
-      Alert.alert('New Order!', `Table ${newOrder.table_number || 'N/A'} - $${newOrder.total.toFixed(2)}`);
+      Alert.alert('New Order!', `Table ₹{newOrder.table_number || 'N/A'} - $₹newOrder.total.toFixed(2)`);
     });
   };
 
@@ -186,7 +186,7 @@ export default function AdminDashboardScreen() {
       )}
 
       <View style={styles.orderFooter}>
-        <Text style={styles.orderTotal}>${item.total.toFixed(2)}</Text>
+        <Text style={styles.orderTotal}>₹item.total.toFixed(2)</Text>
         {item.status !== 'completed' && (
           <TouchableOpacity
             style={styles.statusButton}
@@ -210,7 +210,7 @@ export default function AdminDashboardScreen() {
           <View style={{ flex: 1 }}>
             <Text style={styles.menuName}>{item.name}</Text>
             <Text style={styles.menuCategory}>{item.category}</Text>
-            <Text style={styles.menuPrice}>${item.price.toFixed(2)}</Text>
+            <Text style={styles.menuPrice}>₹item.price.toFixed(2)</Text>
           </View>
           <View style={styles.menuActions}>
             <TouchableOpacity

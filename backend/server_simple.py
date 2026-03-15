@@ -157,6 +157,10 @@ def admin_login(admin: AdminLogin):
 
 @app.post("/api/admin/register")
 def admin_register(admin: AdminLogin):
+    # Maximum 3 admins allowed
+    if len(admins_db) >= 3:
+        raise HTTPException(status_code=400, detail="Maximum 3 admins allowed. Registration limit reached.")
+    
     for admin_user in admins_db:
         if admin_user["username"] == admin.username:
             raise HTTPException(status_code=400, detail="Username exists")

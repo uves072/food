@@ -74,7 +74,7 @@ export default function EditItemScreen() {
       });
 
       if (!result.canceled && result.assets[0].base64) {
-        setImage(`data:image/jpeg;base64,${result.assets[0].base64}`);
+        setImage(`data:image/jpeg;base64,₹{result.assets[0].base64}`);
       }
     } catch (error) {
       console.error('Error picking image:', error);

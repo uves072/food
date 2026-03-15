@@ -175,13 +175,13 @@ export default function OrderStatusScreen() {
           {order.items.map((item, index) => (
             <View key={index} style={styles.itemRow}>
               <Text style={styles.itemText}>{item.quantity}x {item.name}</Text>
-              <Text style={styles.itemPrice}>${(item.price * item.quantity).toFixed(2)}</Text>
+              <Text style={styles.itemPrice}>₹(item.price * item.quantity).toFixed(2)</Text>
             </View>
           ))}
           <View style={styles.divider} />
           <View style={styles.totalRow}>
             <Text style={styles.totalLabel}>Total:</Text>
-            <Text style={styles.totalAmount}>${order.total.toFixed(2)}</Text>
+            <Text style={styles.totalAmount}>₹order.total.toFixed(2)</Text>
           </View>
         </View>
 
