@@ -1,0 +1,180 @@
+# 🍔 FUNFOOD - Complete URL List
+
+## 📱 Base URL:
+https://food-queue-sys.preview.emergentagent.com
+
+---
+
+## 👥 CUSTOMER URLs (For Tables):
+
+### Main Menu (PRIMARY - Use for QR Code):
+https://food-queue-sys.preview.emergentagent.com/customer/menu
+
+### Shopping Cart:
+https://food-queue-sys.preview.emergentagent.com/customer/cart
+
+### Checkout:
+https://food-queue-sys.preview.emergentagent.com/customer/checkout
+
+### Order Status:
+https://food-queue-sys.preview.emergentagent.com/customer/order-status
+
+---
+
+## 👨‍💼 ADMIN URLs (For Staff):
+
+### Admin Login:
+https://food-queue-sys.preview.emergentagent.com/admin/login
+Credentials:
+- Username: admin
+- Password: admin123
+
+### Dashboard:
+https://food-queue-sys.preview.emergentagent.com/admin/dashboard
+
+### Add Menu Item:
+https://food-queue-sys.preview.emergentagent.com/admin/add-item
+
+### Edit Menu Item:
+https://food-queue-sys.preview.emergentagent.com/admin/edit-item
+
+---
+
+## 🔧 API URLs (For Testing):
+
+### Health Check:
+https://food-queue-sys.preview.emergentagent.com/api/health
+
+### Get Menu:
+https://food-queue-sys.preview.emergentagent.com/api/menu
+
+### Get Orders:
+https://food-queue-sys.preview.emergentagent.com/api/orders
+
+### Admin Login API:
+POST https://food-queue-sys.preview.emergentagent.com/api/admin/login
+
+---
+
+## 📱 QR CODE URLs:
+
+### All QR Codes Page:
+https://food-queue-sys.preview.emergentagent.com/qr.html
+
+### Generate Individual QR Codes:
+
+**For Customer Menu:**
+1. Go to: https://qr-code-generator.com
+2. Enter URL: https://food-queue-sys.preview.emergentagent.com/customer/menu
+3. Download PNG
+4. Print and place on tables
+
+**For Admin Login:**
+1. Go to: https://qr-code-generator.com
+2. Enter URL: https://food-queue-sys.preview.emergentagent.com/admin/login
+3. Download PNG
+4. Give to staff
+
+---
+
+## 🎯 USAGE INSTRUCTIONS:
+
+### For Restaurant Tables:
+1. Print QR code with Customer Menu URL
+2. Place on table cards/stands
+3. Customer scans → Direct to menu
+4. Customer orders → Kitchen gets notification
+
+### For Kitchen Staff:
+1. Give Admin Login URL
+2. Login: admin / admin123
+3. View orders in real-time
+4. Update order status
+
+### For Manager:
+1. Use Admin Dashboard
+2. Manage menu items
+3. View all orders
+4. Add/Edit/Delete items
+
+---
+
+## ⚠️ IMPORTANT NOTES:
+
+**Current Status: PREVIEW MODE**
+- App is running on preview URL
+- Will work as long as Blackbox AI session is active
+- For 24/7 availability, deploy to Railway + Vercel (FREE)
+
+**For Permanent Deployment:**
+- Follow FREE_HOSTING_SIMPLE_GUIDE.md
+- Get permanent URLs
+- App will run 24/7 independently
+
+**Current Preview URL Limitations:**
+- Works only when Blackbox AI is running
+- Will stop when session ends
+- Perfect for testing and demo
+
+---
+
+## 📊 TESTING CHECKLIST:
+
+Customer Flow:
+- [ ] Open customer menu URL
+- [ ] Browse items
+- [ ] Add to cart
+- [ ] Checkout with table number
+- [ ] See order status
+
+Admin Flow:
+- [ ] Login with admin/admin123
+- [ ] View orders in real-time
+- [ ] Change order status
+- [ ] Add new menu item
+- [ ] Edit existing item
+
+---
+
+## 🚀 NEXT STEPS:
+
+1. ✅ Test all URLs (working in preview)
+2. ⏭️ Deploy to Railway + Vercel (FREE hosting)
+3. ⏭️ Get permanent URLs
+4. ⏭️ Generate QR codes with permanent URLs
+5. ⏭️ Print and place on tables
+
+---
+
+## 💡 PRO TIPS:
+
+**For Customers:**
+- Use Customer Menu URL for QR codes
+- Print on durable material (laminated)
+- Place in visible location on tables
+
+**For Staff:**
+- Bookmark Admin Dashboard URL
+- Keep login credentials secure
+- Train staff on order status updates
+
+**For Testing:**
+- Open in private/incognito mode
+- Test on mobile devices
+- Verify order flow end-to-end
+
+---
+
+## 📞 SUPPORT:
+
+If any URL not working:
+1. Check backend status
+2. Verify preview URL is active
+3. Test API health endpoint
+4. Check browser console for errors
+
+---
+
+**ALL URLS READY TO USE! 🎉**
+
+Test karke batao sab kaam kar raha hai ya nahi!
