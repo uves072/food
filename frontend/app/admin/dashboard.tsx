@@ -64,8 +64,7 @@ export default function AdminDashboardScreen() {
 
     socket.on('new_order', (newOrder: Order) => {
       setOrders((prev) => [newOrder, ...prev]);
-      Alert.alert('New Order!', `Table ${newOrder.table_number || 'N/A'} - ₹${newOrder.total.toFixed(2)}`););
-    });
+      
   };
 
   const loadData = async () => {
