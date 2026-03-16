@@ -62,12 +62,7 @@ export default function AdminDashboardScreen() {
     // Join admin room to receive order notifications
     socket.emit('join_admin');
 
-    socket.on('new_order', (newOrder: Order) => {
-      setOrders((prev) => [newOrder, ...prev]);
-      
-  };
-
-  const loadData = async () => {
+    socket.on('new_order', (newOrder: Order) => 
     try {
       if (activeTab === 'orders') {
         const ordersData = await api.getOrders();
