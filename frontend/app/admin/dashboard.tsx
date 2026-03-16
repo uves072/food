@@ -62,14 +62,17 @@ export default function AdminDashboardScreen() {
     // Join admin room to receive order notifications
     socket.emit('join_admin');
 
-   socket.on('new_order', (newOrder: Order) => {
+ socket.on('new_order', (newOrder: Order) => {
   setOrders((prev) => [newOrder, ...prev]);
 });
-        setOrders(ordersData);
-      } else {
-        const menuData = await api.getMenu();
-        setMenuItems(menuData);
-      }
+
+if (activeTab === 'orders') {
+  const ordersData = await api.getOrders();
+  setOrders(ordersData);
+} else {
+  const menuData = await api.getMenu();
+  setMenuItems(menuData);
+}
     } catch (error) {
       console.error('Error loading data:', error);
       Alert.alert('Error', 'Failed to load data');
